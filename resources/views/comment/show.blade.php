@@ -11,14 +11,18 @@
 		@endif
 
 		<div class="row pb-3">
-			
+
 			<div class="col-3">
 				<label class="form-label">
 					POSTAGEM
 				</label>
 			</div>
 			<div class="col-8">
-				{{ $comment['title'] }}
+				<a href="{{ route('post.show', [
+					'post' => $comment['post_id'],
+				])}}">
+					{{ $comment['title'] }}
+				</a>
 			</div>
 			<div class="row pb-3">
 				<div class="col-3">
@@ -50,7 +54,21 @@
 					{{ $comment['body'] }}
 				</div>
 			</div>
-			
+
 		</div>
-		
+
+		<div class="row mt-4">
+			<div class="col text-end">
+				<form method='post' action="{{ route('comment.destroy', [
+					'comment' => $comment['id'],
+				]) }}">
+					@csrf
+					@method('DELETE')
+					<button type="submit" class="btn btn-outline-danger">
+						APAGAR
+					</button>
+				</form>
+			</div>
+		</div>
+
 </x-layout-default>

@@ -89,6 +89,17 @@
 			<div class="col-8 container-show">
 				{{ $comment['body'] }}
 			</div>
+			<div class="col-1 ">
+				<form method='post' action="{{ route('comment.destroy', [
+					'comment' => $comment['id'],
+				]) }}">
+				@csrf
+				@method('DELETE')
+					<button type="submit" class="btn btn-outline-danger">
+						APAGAR
+					</button>
+				</form>
+			</div>
 		</div>
 
 		@endforeach

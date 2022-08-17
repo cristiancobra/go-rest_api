@@ -114,12 +114,12 @@
 								<ul class="dropdown-menu">
 									<li>
                                         <a class="dropdown-item" href="{{ route('post.index') }}">
-                                            Ver posts
+                                            Ver postagens
                                         </a>
                                     </li>
 									<li>
                                         <a class="dropdown-item" href="{{ route('post.create') }}">
-                                            Criar post
+                                            Criar postagem
                                         </a>
                                     </li>
 								</ul>
