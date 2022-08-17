@@ -3,13 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/app/Http/Controllers/UserController.php</file>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/routes/web.php</file>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/resources/views/user/index.blade.php</file>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/app/Http/Middleware/CheckIfUserCreated.php</file>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/app/Http/Controllers/PostController.php</file>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/app/Models/Post.php</file>
-            <file>file:/home/cristiancobra/docker/inicie-api/my-project/resources/views/components/layout-default.blade.php</file>
+            <file>file:/home/cristiancobra/docker/inicie-api/app/Http/Requests/StorePostRequest.php</file>
+            <file>file:/home/cristiancobra/docker/inicie-api/docker-compose.yml</file>
+            <file>file:/home/cristiancobra/docker/inicie-api/README.md</file>
         </group>
     </open-files>
 </project-private>

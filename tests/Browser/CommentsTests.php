@@ -58,24 +58,4 @@ class CommentsTests extends DuskTestCase {
 		});
 	}
 	
-	/**
-	 * Test if an authenticated user can create a comment and be redirected
-	 *
-	 * @return void
-	 */
-//	public function test_if_authenticated_user_can_create_comment_and_redirected() {
-//		$this->browse(function (Browser $browser) {
-//			$random = rand(1,99);
-//			$randomName = "José $random";
-//			
-//			$browser->visit('set-session') // is authenticated
-//					->visit('/comment/create')	
-//                    ->type('name', $randomName)
-//                    ->type('body', 'Comentário TESTE teste teste teste teste teste teste - ' . $random)
-//					->press('CRIAR')
-//					->pause(1000)
-//					->assertPathIs('/comment')
-//                    ->assertPresent('.alert-success');					
-//		});
-//	}
 }
