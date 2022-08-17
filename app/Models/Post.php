@@ -46,9 +46,8 @@ class Post extends Authenticatable {
 			$user = json_decode($response, true);
 			$user = reset($user);
 
-			$posts[$key]['name'] = $user['name'];
+			$posts[$key]['name'] = $user['name'] ?? 'excluído';
 		}
-
 		return $posts;
 	}
 
@@ -73,7 +72,7 @@ class Post extends Authenticatable {
 		]);
 		$user = json_decode($response, true);
 		$user = reset($user);
-		$post['name'] = $user['name'];
+		$post['name'] = $user['name'] ?? 'excluído';
 
 		// get comments relationship
 		$response = Http::withToken($token)->get('https://gorest.co.in/public/v2/comments', [

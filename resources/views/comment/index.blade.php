@@ -30,12 +30,17 @@
 		<div class="row list position-relative {{ ($comment['name'] === session('user.name')) ? 'alert alert-warning' : null }}">
 			<a class='stretched-link' href='{{ route('comment.show', ['comment' => $comment['id']]) }}'>
 			</a>
-			<div id="comment-name" class="col-3">
+			<div id="comment-name" class="col-2">
 				<h3 class='text-start'>
 					{{ $comment['name'] }}
 				</h3>
 			</div>
-			<div class="col-9">
+			<div class="col-5">
+				<p>
+					{{ $comment['title'] }}
+				<p>
+			</div>
+			<div class="col-5">
 				<p>
 					{{ $comment['body'] }}
 				<p>

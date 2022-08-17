@@ -6,6 +6,7 @@ use App\Models\Comment;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreCommentRequest;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class CommentController extends Controller {
 
@@ -23,21 +24,20 @@ class CommentController extends Controller {
 	/**
 	 * Show the form for creating a new resource.
 	 *
-	 *@param string $post_title Post title coming from the COMENTAR link
+	 * @param string $post_title Post title coming from the COMENTAR link
 	 * @return \Illuminate\Http\Response
 	 */
 	public function create(Request $request) {
-		if ( $request->post_id ) {
+		if ($request->post_id) {
 			$posts = Comment::getPost($request->post_id);
-			
 		} else {
 			$posts = Comment::getPosts();
 		}
 
 		return view('comment.create', compact(
-			[
-				'posts',
-			]
+						[
+							'posts',
+						]
 		));
 	}
 
@@ -57,10 +57,9 @@ class CommentController extends Controller {
 							->back()
 							->withErrors(['failed' => 'Seu comentário não foi salvo.'])
 							->withInput();
-			
 		} else {
-			$message = 'Postagem realizada com sucesso.';
-			
+			$message = 'Comentário adicionado com sucesso.';
+
 			$comment['title'] = Comment::getPostTitleByComment($comment['post_id']);
 
 			return view('comment.show', compact(
@@ -114,8 +113,21 @@ class CommentController extends Controller {
 	 * @param  \App\Models\Comment  $comment
 	 * @return \Illuminate\Http\Response
 	 */
-	public function destroy(Comment $comment) {
-		//
+	public function destroy($comment_id) {
+		$token = env('GOREST_TOKEN');
+
+		$responseJson = Http::withToken($token)->delete('https://gorest.co.in/public/v2/comments/' . $comment_id);
+
+		$response = json_decode($responseJson, true);
+
+		$previous = url()->previous();
+		
+		if (Str::contains($previous, 'post')) {
+			return redirect()->back();
+		} else {
+			return redirect()->route('comment.index');
+		}
+
 	}
 
 }
