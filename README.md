@@ -24,18 +24,19 @@ Para iniciar será preciso clonar a aplicação. Em um terminal, navegue até a 
 git clone https://github.com/cristiancobra/inicie-api.git
 ```
 
-Entre no diretório clonado e execute:
 
-```
-docker compose up -d --build
-```
-
-Instale as dependências do projeto:
+Entre no diretório e instale as dependências do projeto:
 
 ```
 composer install
 ```
 
+
+E então execute:
+
+```
+docker compose up -d --build
+```
 
 ### CONFIGURAÇÃO DA AUTENTICAÇÃO (TOKEN):
 Para interagir com a API é necessário utilizar seu próprio token da GO REST API.
