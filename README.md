@@ -16,11 +16,13 @@ Desenvolvido para Teste de Seleção da INICIE.
 ### INSTALAÇÃO:
 Para iniciar a aplicação será preciso clonar e conteinerizar sua aplicação. Após executar os comandos abaixo, sua aplicação estará disponível via http://localhost:8000/
 
-***
+'''
 git clone https://github.com/cristiancobra/api-inicie.git
+
 docker-compose up -d --build
+
 docker-compose run composer install
-***
+'''
 
 ### CONFIGURAÇÃO DA AUTENTICAÇÃO (TOKEN):
 Para interagir com a API é necessário utilizar seu próprio token da GO REST API.
