@@ -11,6 +11,7 @@ Desenvolvido para Teste de Seleção da INICIE.
 - Conta Github
 - Docker
 - Docker-compose
+- Composer
 
 ** Por ser uma versão de teste, não foi utilizado banco de dados. Os dados são gerados temporariamente na sessão do navegador.
 
@@ -32,7 +33,7 @@ docker compose up -d --build
 Instale as dependências do projeto:
 
 ```
-docker compose run composer install
+composer install
 ```
 
 
