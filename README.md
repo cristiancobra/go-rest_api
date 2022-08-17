@@ -26,13 +26,13 @@ git clone https://github.com/cristiancobra/inicie-api.git
 Entre no diretório clonado e execute:
 
 ```
-docker-compose up -d --build
+docker compose up -d --build
 ```
 
 Instale as dependências do projeto:
 
 ```
-docker-compose run composer install
+docker compose run composer install
 ```
 
 
