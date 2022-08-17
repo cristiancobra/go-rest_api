@@ -1,4 +1,5 @@
-# Inicie API
+
+# INICIE API
 Aplicação para consumo da GOREST API. Criação de usuário, postagens e comentários via API com autenticação.
 
 Desenvolvido com Laravel 9 com imagem docker <a href='https://hub.docker.com/r/bitnami/laravel'>Bitinami Laravel </a>.
@@ -40,7 +41,10 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 
 ### USO:
-** 1. CRIAR UM NOVO USUÁRIO NO SISTEMA: **
+
+---
+
+**1. CRIAR UM NOVO USUÁRIO NO SISTEMA:**
 
 1.1. Acesse no navegador: http://localhost:8000 para ser direcionado para a página 'CRIAR NOVO USUÁRIO'.
 
@@ -48,15 +52,17 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 1.3. Você será direcionado para a tela de 'detalhes' onde poderá ver seu ID e demais dados. Seu ID e NOME de login ficaram disponíveis no menu superior ao lado direito.
 
+---
 
-** 2. LISTAR TODOS USUÁRIOS DA API E O USUÁRIO CRIADO: **
+**2. LISTAR TODOS USUÁRIOS DA API E O USUÁRIO CRIADO:**
 
 2.1. No menu superior clique em USUÁRIOS e VER USUÁRIOS. Seu usuário recém criado estará destacado em amarelo.
 
 2.2. Clique no usuário desejado para acessar página com DETALHES DO USUÁRIO.
 
+---
 
-** 3. CRIAR POSTAGEM PARA O USUÁRIO CRIADO: **
+**3. CRIAR POSTAGEM PARA O USUÁRIO CRIADO:**
 
 3.1. No menu superior clique em POSTAGENS e CRIAR POSTAGEM.
 
@@ -64,15 +70,17 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 3.3. Clique no botão CRIAR.
 
+---
 
-** 4. CRIAR NOVO COMENTÁRIO DENTRO DA POSTAGEM CRIADA: **
+**4. CRIAR NOVO COMENTÁRIO DENTRO DA POSTAGEM CRIADA:**
 
 4.1. Você criou uma postagema e foi redirecionado a página POSTAGEM. Clique no botão COMENTAR.
 
 4.2. Na tela NOVO COMENTÁRIO basta inserir seu comentário e clicar em CRIAR.
 
+---
 
-** 5. CRIAR COMENTÁRIO EM POSTAGEM DA LISTA PÚBLICA **
+**5. CRIAR COMENTÁRIO EM POSTAGEM DA LISTA PÚBLICA**
 
 5.1. No menu superior clique em POSTAGENS e VER POSTAGENS.
 
@@ -80,8 +88,9 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 5.3. Você foi redirecionado para a página da POSTAGEM. Clique no botão COMENTAR.
 
+---
 
-** 6. APAGAR O COMENTÁRIO CRIADO **
+**6. APAGAR O COMENTÁRIO CRIADO**
 
 6.1. No menu superior clique em COMNETÁRIOS e VER COMENTÁRIOS.
 
@@ -89,4 +98,6 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 6.3. Você foi redirecionado para a página da DETALHES DO COMENTÁRIO. Clique no botão APAGAR.
 
-Se você estiver dentro da página da POSTAGEM, você também poderá clicar no botão APAGAR ao lado do comentário para apagá-lo.
+*Se você estiver dentro da página da POSTAGEM, você também poderá clicar no botão APAGAR ao lado do comentário para apagá-lo.*
+
+---
