@@ -17,7 +17,7 @@ Desenvolvido para Teste de Seleção da INICIE.
 Para iniciar a aplicação será preciso clonar e conteinerizar sua aplicação. Após executar os comandos abaixo, sua aplicação estará disponível via http://localhost:8000/
 
 ```
-git clone https://github.com/cristiancobra/api-inicie.git
+git clone https://github.com/api-inicie.git
 
 docker-compose up -d --build
 
