@@ -4,7 +4,7 @@ Aplicação para consumo da GOREST API. Criação de usuário, postagens e comen
 
 Desenvolvido com Laravel 9 com imagem docker <a href='https://hub.docker.com/r/bitnami/laravel'>Bitinami Laravel </a>.
 
-Desenvolvido para Teste de Seleção da INICIE.
+Desenvolvido para Teste.
 
 ### PRÉ-REQUISITOS:
 - Git
