@@ -31,6 +31,17 @@ Entre no diretório e instale as dependências do projeto:
 composer install
 ```
 
+Faça uma cópia do arquivo .env.example
+
+```
+cp .env.example .env
+```
+
+Gere uma nova chave para sua aplicação com o comando
+
+```
+php artisan key:generate
+```
 
 E então execute:
 
@@ -43,13 +54,7 @@ Para interagir com a API é necessário utilizar seu próprio token da GO REST A
 
 1.1. Acesse o site https://gorest.co.in/ crie um usuário, gere um token e copie seu número.
 
-1.2. Dentro do diretório raiz da aplicação, execute o comando para gerar um arquivo de configuração.
-
-***
-cp .env.example .env
-***
-
-1.3. Utilize seu editor de texto preferido para editar o arquivo .env criado acima. Cole o número do seu token no item GOREST_TOKEN, como no exemplo:
+1.2. Utilize seu editor de texto preferido para editar o arquivo .env criado acima. Cole o número do seu token no item GOREST_TOKEN, como no exemplo:
 
 ***
 GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
