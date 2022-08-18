@@ -113,7 +113,7 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 **6. APAGAR O COMENTÁRIO CRIADO**
 
-6.1. No menu superior clique em COMNETÁRIOS e VER COMENTÁRIOS.
+6.1. No menu superior clique em COMENTÁRIOS e VER COMENTÁRIOS.
 
 6.2. Em LISTA DE COMENTÁRIOS clique em um comentário.
 
