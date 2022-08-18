@@ -16,7 +16,7 @@ Desenvolvido para Teste de Seleção da INICIE.
 ** Por ser uma versão de teste, não foi utilizado banco de dados. Os dados são gerados temporariamente na sessão do navegador.
 
 ### INSTALAÇÃO:
-Para iniciar a aplicação será preciso clonar e conteinerizar sua aplicação. Após executar os comandos abaixo, sua aplicação estará disponível via http://localhost:8000/
+Para iniciar a aplicação será preciso clonar e conteinerizar sua aplicação. Após executar os comandos abaixo, sua aplicação estará disponível via http://0.0.0.0:8000/
 
 Para iniciar será preciso clonar a aplicação. Em um terminal, navegue até a pasta onde irá baixar a aplicação e execute:
 
@@ -67,7 +67,7 @@ GOREST_TOKEN=6fcceb6ad0f9860c1f1a0fd6151f653e76eecb2e25830346e0f8d5jd73jd73jd
 
 **1. CRIAR UM NOVO USUÁRIO NO SISTEMA:**
 
-1.1. Acesse no navegador: http://localhost:8000 para ser direcionado para a página 'CRIAR NOVO USUÁRIO'.
+1.1. Acesse no navegador: http://0.0.0.0:8000 para ser direcionado para a página 'CRIAR NOVO USUÁRIO'.
 
 1.2. Preencha os campos de nome e email (não utilize dados reais).
 
